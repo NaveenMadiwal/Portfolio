@@ -1,66 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+  <title>Naveen Madiwal | .NET Full-Stack Developer</title>
+  <meta name="description" content="Naveen Madiwal - .NET Software Engineer building web apps with ASP.NET Core MVC, Entity Framework and SQL Server.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="logo">
-        <a href="#" class="navbar-logo">Naveen Madiwal</a>
-      </div>
-      <div class="menus">
-        <ul class="navbar-menu">
-          <li class="navbar-item"><a href="#home" class="navbar-link">Home</a></li>
-          <li class="navbar-item"><a href="#about" class="navbar-link">Skills</a></li>
-          <li class="navbar-item"><a href="#services" class="navbar-link">Projects</a></li>
-          <li class="navbar-item"><a href="#contact" class="navbar-link">About</a></li>
-          <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
   <video autoplay loop muted playsinline id="background-video">
-    <source src="medias/background-video.mp4" type="video/mp4">
+    <source src="./assests/background-video.mp4" type="video/mp4">
   </video>
+  <div class="overlay"></div>
 
-  <section id="main-sec" class="clearfix">
+  <nav class="navbar">
+    <a href="#home" class="navbar-logo">Naveen Madiwal</a>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.navbar-menu').classList.toggle('open')"><i class="fas fa-bars"></i></button>
+    <ul class="navbar-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <div id="aboutMe">
-  <div class="heading">
-    <h1>NAVEEN MADIWAL</h1>
-  </div>
-  <div class="des">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellat totam quo! Distinctio consequatur quibusdam soluta impedit dignissimos eaque fugiat!Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Aliquam repellat totam quo! Distinctio consequatur quibusdam soluta impedit dignissimos eaque fugiat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellat totam quo! Distinctio consequatur quibusdam soluta impedit dignissimos eaque fugiat!</p>
-  </div>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Software Engineer, Bengaluru</p>
+        <h1>Naveen Madiwal</h1>
+        <p class="lead">I build scalable web applications with C#, ASP.NET Core MVC, Entity Framework and SQL Server, and I deploy them on Azure. Right now I work on web applications at Toyota Kirloskar Motors.</p>
+        <div class="stats">
+          <div><b>2.8 yrs</b><span>Experience</span></div>
+          <div><b>3</b><span>Companies</span></div>
+          <div><b>.NET</b><span>Primary stack</span></div>
+        </div>
+        <div class="icons">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/naveen-madiwal/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:naveenmadiwal7777@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="btns">
+          <a href="./assests/Naveen_Software_Developer.pdf" class="btn primary" target="_blank" rel="noopener">Download Resume</a>
+          <a href="#projects" class="btn">See my work</a>
+        </div>
+      </div>
+      <div class="hero-img"><img src="./assests/banner.webp" alt="Naveen Madiwal"></div>
+    </section>
 
-  <div class="icons">
-    <a href="#" class="git" ><i class="fab fa-github" style="color:white"></i></a>
-    <a href="#" class="linkedin"><i class="fab fa-linkedin" style="color:#2868b2"></i></a>
-    <a href="#" class="gmail"><i class="fas fa-envelope" style="color:#ec4134"></i></a>
-  </div>
-  <div class="resume-btn">
-    <button> <a href="./medias/Naveen_Software_Developer.pdf" class="r-btn" target="_blank">Download Resume</a> </button>
-  </div>
-</div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <h3 class="sub">.NET and Data</h3>
+      <div class="sk-row big-row"><div class="sk"><i class="devicon-csharp-plain colored"></i><span>C#</span></div><div class="sk"><i class="devicon-dotnetcore-plain colored"></i><span>.NET Core</span></div><div class="sk"><i class="devicon-dotnetcore-plain colored"></i><span>ASP.NET Core MVC</span></div><div class="sk"><i class="devicon-dot-net-plain colored"></i><span>.NET Framework</span></div><div class="sk"><i class="devicon-microsoftsqlserver-plain colored"></i><span>SQL Server</span></div><div class="sk"><i class="fas fa-database ef"></i><span>Entity Framework</span></div></div>
+      <h3 class="sub">Front-End</h3>
+      <div class="sk-row"><div class="sk"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div><div class="sk"><i class="devicon-react-original colored"></i><span>ReactJS</span></div><div class="sk"><i class="devicon-jquery-plain colored"></i><span>jQuery</span></div><div class="sk"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div><div class="sk"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div><div class="sk"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div></div>
+      <h3 class="sub">Cloud</h3>
+      <div class="sk-row"><div class="sk"><i class="devicon-azure-plain colored"></i><span>Azure</span></div><div class="sk"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div></div>
+      <h3 class="sub">Developer Tools</h3>
+      <div class="sk-row"><div class="sk"><i class="devicon-visualstudio-plain colored"></i><span>Visual Studio</span></div><div class="sk"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div><div class="sk"><i class="devicon-git-plain colored"></i><span>Git</span></div><div class="sk"><i class="devicon-github-original colored"></i><span>GitHub</span></div><div class="sk"><i class="devicon-bitbucket-original colored"></i><span>Bitbucket</span></div><div class="sk"><i class="devicon-sourcetree-original colored"></i><span>SourceTree</span></div></div>
+      <h3 class="sub">Also worked with</h3>
+      <div class="sk-row small-row"><div class="sk"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div><div class="sk"><i class="devicon-php-plain colored"></i><span>PHP</span></div></div>
+      <p class="ai">AI tools I use to speed up coding and debugging: ChatGPT, Claude, Cursor, Base44.</p>
+    </section>
 
-    <div id="thumbnail">
-      <img src="./medias/banner.webp" alt="">
-    </div>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid projects">
+        <article class="card"><i class="fas fa-graduation-cap big"></i><h3>Learning Management System</h3><p>A scalable LMS for managing courses, students and assessments. Role-based login with ASP.NET Identity, database access through Entity Framework, optimised SQL queries and a CI/CD pipeline.</p><p class="tags"><span>ASP.NET Core MVC</span><span>React.js</span><span>Identity</span><span>SQL Server</span></p></article>
+        <article class="card"><i class="fas fa-robot big"></i><h3>AI Chatbot on Azure</h3><p>Answers questions automatically using Azure Language Services and a Knowledge Base. Back end in C# and SQL Server, deployed on Azure App Service with CI/CD and monitoring.</p><p class="tags"><span>Azure</span><span>ASP.NET Core</span><span>C#</span><span>SQL Server</span></p></article>
+        <article class="card"><i class="fas fa-globe big"></i><h3>iCent: Student Engagement App</h3><p>Worked on the admin panel of a multilingual app for international students: user management, document approvals and dynamic checklists. Fixed bugs and improved performance across university modules.</p><p class="tags"><span>.NET Core</span><span>SQL Server</span><span>jQuery</span><span>Bootstrap</span></p></article>
+      </div>
+    </section>
 
+    <section id="about">
+      <h2>About</h2>
+      <div class="about">
+        <div>
+          <p>I work mainly with C# and .NET: ASP.NET Core MVC, Entity Framework and SQL Server, with JavaScript and jQuery on the front end. I started in PHP, then moved fully to .NET and have worked on it since.</p>
+          <p>I studied Mechanical Engineering (B.Tech, CGPA 8.2, 2022), so I'm comfortable with the plant and process side of manufacturing software. I speak English, Kannada and Hindi.</p>
+        </div>
+        <ol class="timeline">
+          <li><span>Dec 2025 - Present</span><h3>Software Engineer, Toyota Kirloskar Motors (via Technoforte)</h3><p>Developing and maintaining web applications with ASP.NET Core MVC, Entity Framework and MSSQL. Responsive UIs with Bootstrap and jQuery, plus debugging and performance tuning.</p></li>
+          <li><span>Feb 2025 - May 2025</span><h3>.NET Developer, Neel-Tech</h3><p>Worked on front-end and back-end features, improved UI responsiveness and cleaned up legacy code.</p></li>
+          <li><span>Aug 2023 - Feb 2025</span><h3>Software Engineer, Proton Expert Systems and Solutions</h3><p>Full-stack development with .NET, ASP.NET Core, JavaScript and SQL, plus API integrations including AutoCAD-based workflows. Built the LMS and the Azure chatbot.</p></li>
+        </ol>
+      </div>
+    </section>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card contact">
+        <p>Open to .NET developer roles. The quickest way to reach me is email.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:naveenmadiwal7777@gmail.com"><i class="fas fa-envelope"></i> Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/naveen-madiwal/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; <script>document.write(new Date().getFullYear())</script> Naveen Madiwal</footer>
 </body>
-
 </html>
